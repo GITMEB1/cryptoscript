@@ -71,7 +71,7 @@
 - Environment variables required for API access
 
 ## Contact Information
-[Add relevant contact information]
+Reachd.jackson@gmail.com
 
 ## Additional Resources
 - API Documentation: [Link]
