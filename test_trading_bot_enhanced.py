@@ -90,6 +90,50 @@ class TestRiskManagement:
         daily_pnl = initial_balance * daily_pnl_pct
         assert risk_manager.can_trade(daily_pnl, initial_balance) == can_trade
 
+    def test_market_gap_handling(self, risk_manager, position_params):
+       """Test handling of large price gaps"""
+       position = Position(**position_params)
+       
+       # Set initial stop loss
+       stop_levels = risk_manager.calculate_stop_levels(
+           float(position.entry_price),
+           float(position.entry_price * Decimal('0.02'))  # 2% ATR
+       )
+       position.current_stop = Decimal(str(stop_levels['stop_loss']))
+       
+       # Initial position value
+       initial_value = position.update_current_value(Decimal('100'))
+       assert Decimal(str(initial_value['unrealized_pnl'])) >= -position.entry_fee
+       
+       # Simulate price gap (30% drop)
+       gap_price = Decimal('70')
+       gap_result = position.update_current_value(gap_price)
+       
+       # Verify significant loss beyond stop loss
+       assert gap_price < position.current_stop
+       assert Decimal(str(gap_result['unrealized_pnl'])) < -position.entry_cost * Decimal('0.25')
+
+    def test_volatility_position_sizing(self, risk_manager):
+       """Test position sizing during high volatility"""
+       balance = Decimal('1000')
+       price = Decimal('100')
+       
+       # Test with different volatility levels
+       normal_vol = Decimal('0.02')  # 2% volatility
+       high_vol = Decimal('0.08')    # 8% volatility
+       
+       normal_size = Decimal(str(risk_manager.compute_position_size(
+           float(balance), float(price), float(normal_vol)
+       )))
+       
+       high_size = Decimal(str(risk_manager.compute_position_size(
+           float(balance), float(price), float(high_vol)
+       )))
+       
+       # Verify position size reduction in high volatility
+       assert high_size < normal_size
+       assert high_size <= normal_size * Decimal('0.6')  # At least 40% smaller
+
 class TestPortfolioIntegration:
     """Integration tests for portfolio management"""
     
