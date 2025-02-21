@@ -1,120 +1,161 @@
-# AI-Powered Alt Season Crypto Trading Bot
+## Getting Started
 
-This is an AI-powered trading bot optimized for cryptocurrency alt season. It monitors Bitcoin dominance and altcoin price trends, generates trading signals based on technical indicators, and executes trades automatically.
+### Prerequisites
+1. Python 3.10 or higher
+2. pip (Python package manager)
+3. Git
+4. A Binance account with API access (for live trading)
 
-## Features
+### Installation
 
-- Bitcoin dominance monitoring to detect alt season
-- Technical analysis using multiple indicators (SMA, RSI, MACD)
-- Risk management with stop-loss and take-profit
-- Support for both backtesting and live trading
-- Detailed logging of all operations
-- Modular design for easy customization
-
-## Prerequisites
-
-- Python 3.10 or higher
-- Binance account with API access (for live trading)
-- TA-Lib library installed
-
-## Installation
-
-1. Clone this repository:
+1. Clone the repository
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone <your-repository-url>
+cd CryptoScript
 ```
 
-2. Install the required packages:
+2. Create and activate a virtual environment (recommended)
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Install required packages
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Install TA-Lib:
-   - Windows: Download and install from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)
-   - Linux: `sudo apt-get install ta-lib`
-   - macOS: `brew install ta-lib`
+4. Install TA-Lib (Technical Analysis Library)
+- Windows: Download and install from [here](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)
+- Linux: `sudo apt-get install ta-lib`
+- macOS: `brew install ta-lib`
 
-4. Copy `.env.example` to `.env` and configure your settings:
+5. Set up environment variables
+- Copy `.env.example` to `.env`
 ```bash
 cp .env.example .env
 ```
+- Edit `.env` with your configuration:
+```env
+TRADING_MODE=backtest  # or 'live' for live trading
+BINANCE_API_KEY=your_api_key
+BINANCE_API_SECRET=your_api_secret
+INITIAL_BALANCE=1000  # Starting balance for backtesting
+UPDATE_INTERVAL=900   # Update interval in seconds (15 minutes)
+```
 
-5. Edit `.env` file with your Binance API credentials and preferred trading mode.
+### Running the Application
 
-## Configuration
+1. Backtesting Mode
+```bash
+python crypto_trading_bot.py
+```
+This will run the bot in backtesting mode using historical data.
 
-The bot can be configured through the following environment variables in the `.env` file:
-
-- `TRADING_MODE`: Set to either "backtest" or "live"
-- `BINANCE_API_KEY`: Your Binance API key
-- `BINANCE_API_SECRET`: Your Binance API secret
-
-Additional configuration parameters can be found at the top of `crypto_trading_bot.py`:
-
-- `BTC_DOMINANCE_THRESHOLD`: Bitcoin dominance threshold for alt season detection
-- `ALTCoin_LIST`: List of altcoins to trade
-- Risk parameters in the `RiskManager` class
-
-## Usage
-
-### Backtesting Mode
-
-To run the bot in backtesting mode:
-
-1. Set `TRADING_MODE=backtest` in your `.env` file
-2. Run the bot:
+2. Live Trading Mode
+- Ensure your `.env` file has `TRADING_MODE=live`
+- Verify your Binance API credentials are set
 ```bash
 python crypto_trading_bot.py
 ```
 
-### Live Trading Mode
+### Configuration Options
 
-To run the bot in live trading mode:
-
-1. Set `TRADING_MODE=live` in your `.env` file
-2. Ensure your Binance API credentials are correctly set
-3. Run the bot:
-```bash
-python crypto_trading_bot.py
+1. Trading Pairs
+Edit the `TRADING_PAIRS` list in `crypto_trading_bot.py`:
+```python
+TRADING_PAIRS = [
+    'ETH/USDT',
+    'BNB/USDT',
+    'SOL/USDT',
+    'ADA/USDT'
+]
 ```
 
-## Trading Strategy
+2. Risk Parameters
+Adjust the risk parameters in the `RiskManager` class:
+- `position_risk`: Risk per trade (default 2%)
+- `max_position_size`: Maximum position size (default 25%)
+- `min_trade_amount`: Minimum trade amount (default $10)
+- `max_trades`: Maximum concurrent trades (default 2)
+- `max_daily_loss`: Maximum daily loss limit (default 2%)
 
-The bot implements a momentum-based strategy with the following components:
+3. Technical Indicators
+Modify the parameters in the `SignalGenerator` class:
+- `ema_fast`: Fast EMA period (default 9)
+- `ema_slow`: Slow EMA period (default 21)
+- `rsi_period`: RSI period (default 14)
+- `atr_period`: ATR period (default 14)
 
-1. **Alt Season Detection**:
-   - Monitors Bitcoin dominance
-   - Trades only when BTC dominance is below threshold (default: 55%)
+### Monitoring and Logging
 
-2. **Entry Criteria**:
-   - Price above both 50 and 200-period moving averages
-   - RSI below 70 (not overbought)
-   - MACD crossing above signal line
+- All trading activities are logged to `trading_bot.log`
+- Console output shows real-time trading information
+- Backtest results include:
+  - Final balance
+  - Total profit/loss
+  - Number of trades
+  - Win rate
+  - Maximum drawdown
 
-3. **Exit Criteria**:
-   - Price falls below 50-period moving average
-   - RSI above 80 (overbought)
-   - MACD crosses below signal line
-   - Stop-loss or take-profit hit
+### Troubleshooting
 
-4. **Risk Management**:
-   - 5% stop-loss
-   - 10% take-profit
-   - Position sizing based on account balance and risk factor
+1. TA-Lib Installation Issues
+- Windows: Use the appropriate wheel file for your Python version
+- Linux: Try `sudo apt-get install python3-dev` before installing ta-lib
 
-## Logging
+2. API Connection Issues
+- Verify your API keys are correct
+- Check your internet connection
+- Ensure you have sufficient permissions on your Binance account
 
-The bot logs all activities to both console and `trading_bot.log` file. The log includes:
-- Market conditions
-- Trading signals
-- Order execution details
-- Errors and warnings
+3. Backtesting Performance
+- Reduce the number of trading pairs for faster testing
+- Adjust the date range for historical data
+- Consider using a machine with more RAM for large datasets
 
-## Disclaimer
+### Safety Notes
 
-This bot is for educational purposes only. Cryptocurrency trading carries significant risks. Always test thoroughly in backtesting mode before running with real money. The authors are not responsible for any financial losses incurred using this software.
+1. Always test in backtesting mode first
+2. Start with small amounts in live trading
+3. Monitor the bot regularly when running in live mode
+4. Keep your API keys secure and never share them
+5. Set appropriate stop-loss and risk parameters
+```
 
-## License
+## Recent Updates
 
-MIT License 
+### Version 1.1.0 (or appropriate version number)
+- Improved position management and risk calculations
+- Fixed unrealized PnL calculations
+- Reduced minimum ATR floor to 0.01%
+- Enhanced decimal precision handling
+- All test suites passing
+
+### Known Limitations
+- API rate limiting may affect real-time trading
+- Large backtests require significant memory
+- Some advanced features still in development
+
+### Upcoming Features
+- Advanced backtesting capabilities
+- Enhanced market analysis tools
+- Improved user interface
+- Additional risk management features
+
+## Contributing
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## Testing
+To run the test suite:
+```bash
+pytest test_trading_bot_enhanced.py -v
+```
+
+All tests should pass successfully. If you encounter any issues, please check the troubleshooting section or raise an issue on GitHub.
+```

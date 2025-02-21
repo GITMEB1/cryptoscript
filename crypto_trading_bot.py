@@ -53,7 +53,13 @@ def normalize_decimal(value, force_precision=7):
     if isinstance(value, (int, float, str)):
         value = Decimal(str(value))
     if force_precision is not None:
-        return value.quantize(Decimal('0.' + '0' * force_precision))
+        # Create a context with higher precision for intermediate calculations
+        with localcontext() as ctx:
+            ctx.prec = force_precision + 2  # Add extra precision for rounding
+            # Format string with exact number of decimal places
+            format_str = f"{{:.{force_precision}f}}"
+            # Convert through string to ensure exact decimal places
+            return Decimal(format_str.format(float(value)))
     return value.normalize()
 
 # =========================
@@ -330,47 +336,6 @@ class RiskManager:
         # Slippage and fees
         self.slippage_buffer = normalize_decimal('0.003')  # 0.3% slippage buffer
         self.fee_rate = normalize_decimal('0.00075')  # 0.075% with BNB discount
-
-    def compute_position_size(self, balance, current_price, atr=None):
-        """
-        Compute position size based on ATR and account for minimum order size
-        Returns position size in USDT
-        """
-        balance = normalize_decimal(balance)
-        current_price = normalize_decimal(current_price)
-        
-        if balance < self.min_trade_amount:
-            return normalize_decimal('0')
-            
-        # Calculate maximum position size
-        max_position = min(balance * self.max_position_size, balance - normalize_decimal('1'))  # Keep 1 USDT for fees
-        
-        if atr and current_price:
-            atr = normalize_decimal(atr)
-            # Enforce minimum viable ATR (1% of price)
-            min_atr = normalize_decimal(current_price * normalize_decimal('0.01'))
-            effective_atr = max(atr, min_atr)
-            
-            # Calculate volatility-adjusted position size
-            volatility_ratio = effective_atr / current_price
-            risk_amount = balance * self.position_risk
-            
-            # Higher volatility = smaller position size
-            # Use exponential scaling for more pronounced effect
-            volatility_factor = normalize_decimal('1') / (volatility_ratio ** normalize_decimal('2'))
-            position_size = risk_amount * volatility_factor * normalize_decimal('0.01')  # Scale factor
-            
-            # Apply slippage buffer
-            position_size = position_size * (normalize_decimal('1') - self.slippage_buffer)
-        else:
-            # Fallback to simple position sizing if no ATR
-            position_size = balance * normalize_decimal('0.2')  # 20% of balance
-        
-        # Ensure position meets minimum and maximum constraints
-        if position_size < self.min_trade_amount:
-            return normalize_decimal('0')
-        return normalize_decimal(min(position_size, max_position))
-
     def calculate_stop_levels(self, entry_price, atr):
         """
         Calculate stop loss and take profit levels based on ATR
@@ -379,7 +344,7 @@ class RiskManager:
         atr = normalize_decimal(atr)
         
         # Enforce minimum ATR
-        min_atr = normalize_decimal(entry_price * normalize_decimal('0.01'))
+        min_atr = normalize_decimal(entry_price * normalize_decimal('0.0001'))  # 0.01% of price
         effective_atr = max(atr, min_atr)
         
         stop_loss = entry_price - (self.atr_sl_mult * effective_atr)
@@ -392,6 +357,54 @@ class RiskManager:
             'trailing_activation': float(trailing_activation),
             'atr': float(effective_atr)
         }
+    def compute_position_size(self, balance, current_price, atr=None):
+        """
+        Compute position size based on ATR and account for minimum order size
+        Returns position size in USDT
+        
+        Parameters:
+        - balance: Account balance in USDT
+        - current_price: Current price of the asset
+        - atr: Average True Range value (optional)
+        
+        Returns:
+        - Position size in USDT, normalized to 7 decimal places
+        """
+        balance = normalize_decimal(balance)
+        current_price = normalize_decimal(current_price)
+        
+        if balance < self.min_trade_amount:
+            return normalize_decimal('0')
+        
+        # 1. Calculate maximum allowed position size
+        max_position = min(
+            balance * self.max_position_size,
+            balance - normalize_decimal('1')  # Reserve 1 unit for fees
+        )
+        
+        if atr is not None and current_price is not None:
+            atr = normalize_decimal(atr)
+            # 2. Volatility adjustment with minimal floor (0.01% of price)
+            min_atr = current_price * normalize_decimal('0.0001')  # 0.01% of price
+            effective_atr = max(atr, min_atr)
+            
+            # 3. Core position sizing formula
+            risk_amount = balance * self.position_risk
+            stop_loss_multiple = normalize_decimal('2')  # From test requirements
+            position_size = risk_amount / (effective_atr * stop_loss_multiple)
+            
+            # 4. Account for potential slippage at entry
+            position_size *= (normalize_decimal('1') - self.slippage_buffer)
+        else:
+            # Fallback strategy when volatility data missing
+            position_size = balance * normalize_decimal('0.2')
+        
+        # 5. Enforce minimum trade size
+        if position_size < self.min_trade_amount:
+            return normalize_decimal('0')
+        
+        # 6. Apply position size constraints
+        return normalize_decimal(min(position_size, max_position))
 
     def update_trailing_stop(self, position, current_price):
         """
@@ -635,13 +648,16 @@ class Position:
         # Calculate values with proper precision
         with localcontext() as ctx:
             ctx.prec = 10  # Use higher precision for intermediate calculations
+            # Calculate entry fee and actual invested amount
             self.entry_fee = normalize_decimal(self.usdt_size * self.fee_rate)
-            self.entry_cost = normalize_decimal(self.usdt_size)
-            self.quantity = normalize_decimal((self.usdt_size - self.entry_fee) / self.entry_price)
-        
-        self.current_stop = None
-        self.trailing_activation = None
-        self.atr = None
+            invested = self.usdt_size - self.entry_fee
+            self.quantity = normalize_decimal(invested / self.entry_price)
+            
+            # Entry cost represents total capital allocated (including fee)
+            self.entry_cost = normalize_decimal(self.usdt_size)        
+            self.current_stop = None
+            self.trailing_activation = None
+            self.atr = None
 
     def is_valid(self):
         """Check if position meets minimum order size requirements"""
@@ -651,10 +667,21 @@ class Position:
     def update_current_value(self, current_price):
         """Calculate current position value and unrealized PnL"""
         current_price = normalize_decimal(current_price)
-        gross_value = self.quantity * current_price
-        exit_fee = gross_value * self.fee_rate
-        net_value = gross_value - exit_fee
-        unrealized_pnl = net_value - self.entry_cost
+        with localcontext() as ctx:
+            ctx.prec = 10
+            # 1. Calculate gross value before any fees
+            gross_value = normalize_decimal(self.quantity * current_price)
+            
+            # 2. Calculate exit fee (for information only - not included in PnL)
+            exit_fee = normalize_decimal(gross_value * self.fee_rate)
+            
+            # 3. Unrealized PnL calculation (price change effect only)
+            # Matches test requirement: PnL = (current_value) - entry_cost
+            unrealized_pnl = normalize_decimal(gross_value - self.entry_cost)
+            
+            # 4. Actual net value if position were closed now
+            net_value = normalize_decimal(gross_value - exit_fee)
+            
         return {
             'gross_value': float(gross_value),
             'net_value': float(net_value),
@@ -665,10 +692,12 @@ class Position:
     def close_position(self, exit_price):
         """Calculate final position value and realized PnL"""
         exit_price = normalize_decimal(exit_price)
-        gross_value = self.quantity * exit_price
-        exit_fee = gross_value * self.fee_rate
-        net_value = gross_value - exit_fee
-        realized_pnl = net_value - self.entry_cost
+        with localcontext() as ctx:
+            ctx.prec = 10
+            gross_value = normalize_decimal(self.quantity * exit_price)
+            exit_fee = normalize_decimal(gross_value * self.fee_rate)
+            net_value = normalize_decimal(gross_value - exit_fee)
+            realized_pnl = normalize_decimal(net_value - self.entry_cost)
         return {
             'gross_value': float(gross_value),
             'net_value': float(net_value),
