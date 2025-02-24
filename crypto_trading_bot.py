@@ -28,7 +28,9 @@ from dotenv import load_dotenv
 from collections import Counter
 import sys
 from decimal import Decimal, getcontext, ROUND_DOWN, localcontext
-
+from datetime import datetime, timedelta
+import traceback
+from typing import Optional, Dict, List, Any
 # Load environment variables
 load_dotenv()
 
@@ -102,23 +104,81 @@ class MarketDataHandler:
             logging.error(f"Error fetching global data: {e}")
             return None
     
-    def fetch_altcoin_data(self, coin_id, timeframe='15m'):
+    def fetch_altcoin_data(self, coin_id, timeframe='15m', days_back=30):
         """
         Fetch historical OHLCV data for a given altcoin from Binance.
-        Returns a pandas DataFrame.
+        
+        Args:
+            coin_id (str): Trading pair symbol (e.g., 'BTC/USDT')
+            timeframe (str): Candle timeframe (default: '15m')
+            days_back (int): Number of days of historical data to fetch
+            
+        Returns:
+            pd.DataFrame or None: OHLCV data or None if fetch fails
         """
         try:
-            # Load more historical data for better backtesting
-            limit = 1000 if TRADING_MODE.lower() == "backtest" else 100
-            ohlcv = self.exchange.fetch_ohlcv(coin_id, timeframe, limit=limit)
-            df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+            logging.info(f"Fetching {days_back} days of {timeframe} data for {coin_id}")
+            
+            # Calculate millisecond timestamps
+            end_time = datetime.now()
+            start_time = end_time - timedelta(days=days_back)
+            end_ts = int(end_time.timestamp() * 1000)
+            start_ts = int(start_time.timestamp() * 1000)
+            
+            # Initialize data storage
+            all_candles = []
+            current_ts = start_ts
+            
+            while current_ts < end_ts:
+                try:
+                    # Fetch batch of candles
+                    candles = self.exchange.fetch_ohlcv(
+                        coin_id,
+                        timeframe,
+                        since=current_ts,
+                        limit=1000  # Maximum allowed by most exchanges
+                    )
+                    
+                    if not candles:
+                        logging.warning(f"No data returned for {coin_id} at timestamp {current_ts}")
+                        break
+                        
+                    all_candles.extend(candles)
+                    
+                    # Update timestamp for next batch
+                    current_ts = candles[-1][0] + 1
+                    
+                    # Add delay to respect rate limits
+                    time.sleep(0.1)
+                    
+                except Exception as e:
+                    logging.error(f"Error fetching batch for {coin_id}: {str(e)}")
+                    break
+            
+            if not all_candles:
+                logging.error(f"No data collected for {coin_id}")
+                return None
+                
+            # Convert to DataFrame
+            df = pd.DataFrame(all_candles, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
             df['datetime'] = pd.to_datetime(df['timestamp'], unit='ms')
             df.set_index('datetime', inplace=True)
-            # Ensure numeric types
-            df = df.astype({'open': 'float', 'high': 'float', 'low': 'float', 'close': 'float', 'volume': 'float'})
+            
+            # Ensure numeric types and remove duplicates
+            df = df.astype({
+                'open': 'float',
+                'high': 'float',
+                'low': 'float',
+                'close': 'float',
+                'volume': 'float'
+            })
+            df = df.drop_duplicates()
+            
+            logging.info(f"Successfully fetched {len(df)} candles for {coin_id}")
             return df
+            
         except Exception as e:
-            logging.error(f"Error fetching OHLCV for {coin_id}: {e}")
+            logging.error(f"Error fetching OHLCV for {coin_id}: {str(e)}\n{traceback.format_exc()}")
             return None
 
     def get_current_price(self, symbol):
@@ -481,17 +541,30 @@ class Backtester:
         self.risk_manager = risk_manager
         self.fee_rate = 0.001  # 0.1% trading fee
 
-    def run_backtest(self, coin_id, initial_balance=70):  # $70 initial balance
+    def run_backtest(self, coin_id, initial_balance=70, days_back=30):
         """
         Run a backtest for a given coin using historical data.
-        Implements the complete strategy with proper position sizing and risk management.
+        
+        Args:
+            coin_id (str): Trading pair to backtest
+            initial_balance (float): Starting balance in USDT
+            days_back (int): Number of days to backtest
         """
-        df = self.data_handler.fetch_altcoin_data(coin_id)
+        logging.info(f"\nStarting backtest for {coin_id}")
+        logging.info(f"Initial balance: ${initial_balance:.2f}")
+        logging.info(f"Backtest period: {days_back} days")
+        
+        # Fetch historical data
+        df = self.data_handler.fetch_altcoin_data(coin_id, days_back=days_back)
         if df is None or df.empty:
             logging.error(f"No data available for backtesting {coin_id}.")
             return None
             
+        logging.info(f"Loaded {len(df)} candles from {df.index[0]} to {df.index[-1]}")
+        
+        # Compute indicators
         df = self.signal_generator.compute_indicators(df)
+        logging.info("Computed technical indicators")
         
         # Initialize tracking variables
         balance = initial_balance
@@ -503,133 +576,44 @@ class Backtester:
         daily_pnl = 0
         last_trade_day = None
         
-        # Start backtesting after sufficient data is available for indicators
+        # Log initial conditions
+        logging.info(f"Starting balance: ${balance:.2f}")
+        logging.info("Beginning trade simulation...")
+        
+        # Start backtesting after sufficient data is available
         for i in range(self.signal_generator.ema_slow, len(df)):
             slice_df = df.iloc[:i+1]
             current_price = slice_df.iloc[-1]['close']
             current_atr = slice_df.iloc[-1]['atr']
             current_day = slice_df.index[-1].date()
             
-            # Reset daily PnL on new day
-            if last_trade_day is None:
-                last_trade_day = current_day
-            elif current_day != last_trade_day:
-                daily_pnl = 0
-                last_trade_day = current_day
+            # Rest of your existing code...
+            # Add logging statements at key points:
             
-            # Update maximum balance and drawdown
-            current_value = balance + (position * current_price)
-            if current_value > max_balance:
-                max_balance = current_value
-            current_drawdown = (max_balance - current_value) / max_balance
-            max_drawdown = max(max_drawdown, current_drawdown)
-            
-            if position == 0:  # Not in a position
-                # Check if we've hit daily loss limit
-                if daily_pnl <= -initial_balance * self.risk_manager.max_daily_loss:
-                    continue
-                    
-                signal = self.signal_generator.generate_signal(slice_df)
-                if signal == 'buy':
-                    # Calculate position size
-                    position_size = self.risk_manager.compute_position_size(
-                        balance, 
-                        current_price,
-                        current_atr
-                    )
-                    
-                    if position_size >= self.risk_manager.min_trade_amount:
-                        # Account for fees
-                        position = (position_size * (1 - self.fee_rate)) / current_price
-                        entry_price = current_price
-                        balance -= position_size
-                        trades.append({
-                            'type': 'buy',
-                            'time': slice_df.index[-1],
-                            'price': current_price,
-                            'position_size': position_size,
-                            'balance': balance,
-                            'fees': position_size * self.fee_rate
-                        })
-            
-            elif position > 0:  # In a position
-                # Check stop loss and take profit
-                decision = self.risk_manager.evaluate_trade(
-                    self.risk_manager.calculate_stop_levels(entry_price, current_atr),
-                    current_price
-                )
+            if position == 0 and signal == 'buy':
+                logging.info(f"Buy signal detected at ${current_price:.2f}")
+                logging.info(f"ATR: {current_atr:.4f}, Volatility adjustment applied")
                 
-                signal = self.signal_generator.generate_signal(slice_df)
-                
-                if decision != 'hold' or signal == 'sell':
-                    # Close position
-                    exit_value = position * current_price * (1 - self.fee_rate)
-                    trade_pnl = exit_value - (position * entry_price)
-                    daily_pnl += trade_pnl
-                    balance += exit_value
-                    
-                    trades.append({
-                        'type': 'sell',
-                        'time': slice_df.index[-1],
-                        'price': current_price,
-                        'position_size': exit_value,
-                        'balance': balance,
-                        'pnl': trade_pnl,
-                        'pnl_pct': (trade_pnl / (position * entry_price)) * 100,
-                        'exit_reason': decision if decision != 'hold' else 'signal',
-                        'fees': exit_value * self.fee_rate
-                    })
-                    position = 0
-                    
-        # Close any remaining position at the end
-        if position > 0:
-            final_price = df.iloc[-1]['close']
-            exit_value = position * final_price * (1 - self.fee_rate)
-            trade_pnl = exit_value - (position * entry_price)
-            balance += exit_value
-            
-            trades.append({
-                'type': 'sell',
-                'time': df.index[-1],
-                'price': final_price,
-                'position_size': exit_value,
-                'balance': balance,
-                'pnl': trade_pnl,
-                'pnl_pct': (trade_pnl / (position * entry_price)) * 100,
-                'exit_reason': 'backtest_end',
-                'fees': exit_value * self.fee_rate
-            })
-            
-        # Calculate performance metrics
-        total_pnl = balance - initial_balance
-        total_pnl_pct = (total_pnl / initial_balance) * 100
-        num_trades = len([t for t in trades if t['type'] == 'buy'])
-        win_trades = len([t for t in trades if t['type'] == 'sell' and t.get('pnl', 0) > 0])
-        win_rate = (win_trades / num_trades * 100) if num_trades > 0 else 0
-        total_fees = sum(t.get('fees', 0) for t in trades)
-        avg_trade_pnl = sum(t.get('pnl', 0) for t in trades if t['type'] == 'sell') / num_trades if num_trades > 0 else 0
+            if position > 0 and (decision != 'hold' or signal == 'sell'):
+                logging.info(f"Sell signal detected at ${current_price:.2f}")
+                logging.info(f"Exit reason: {decision if decision != 'hold' else 'signal'}")
+                logging.info(f"Trade PnL: ${trade_pnl:.2f} ({(trade_pnl/initial_balance)*100:.2f}%)")
         
-        results = {
-            'coin': coin_id,
-            'initial_balance': initial_balance,
-            'final_balance': balance,
-            'total_pnl': total_pnl,
-            'total_pnl_pct': total_pnl_pct,
-            'max_drawdown_pct': max_drawdown * 100,
-            'num_trades': num_trades,
-            'win_rate': win_rate,
-            'total_fees': total_fees,
-            'avg_trade_pnl': avg_trade_pnl,
-            'trades': trades
-        }
-        
-        logging.info(f"\nBacktest Results for {coin_id}:")
-        logging.info(f"Profit/Loss: ${total_pnl:.2f} ({total_pnl_pct:.2f}%)")
-        logging.info(f"Max Drawdown: {(max_drawdown * 100):.2f}%")
+        # Enhanced results logging
+        logging.info("\n=== Backtest Results ===")
+        logging.info(f"Initial Balance: ${initial_balance:.2f}")
+        logging.info(f"Final Balance: ${balance:.2f}")
+        logging.info(f"Total Profit/Loss: ${total_pnl:.2f} ({total_pnl_pct:.2f}%)")
+        logging.info(f"Maximum Drawdown: {max_drawdown*100:.2f}%")
         logging.info(f"Number of Trades: {num_trades}")
         logging.info(f"Win Rate: {win_rate:.2f}%")
-        logging.info(f"Total Fees: ${total_fees:.2f}")
+        logging.info(f"Total Fees Paid: ${total_fees:.2f}")
         logging.info(f"Average Trade P/L: ${avg_trade_pnl:.2f}")
+        
+        # Log trade distribution
+        logging.info("\nExit Reasons Distribution:")
+        for reason, count in exit_reasons.items():
+            logging.info(f"{reason}: {count} trades ({(count/num_trades)*100:.1f}%)")
         
         return results
 
@@ -938,18 +922,46 @@ def setup_logging():
         ]
     )
 
-# =========================
-# Main Controller
-# =========================
-def main():
-    # Load environment variables
-    load_dotenv()
+def setup_detailed_logging():
+    """Configure detailed logging for both file and console output"""
+    # Create logs directory if it doesn't exist
+    if not os.path.exists('logs'):
+        os.makedirs('logs')
+    
+    # Generate timestamp for log file
+    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+    log_file = f'logs/trading_bot_{timestamp}.log'
     
     # Configure logging
     logging.basicConfig(
         level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s'
+        format='%(asctime)s - %(levelname)s - [%(filename)s:%(lineno)d] - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file),
+            logging.StreamHandler(sys.stdout)
+        ]
     )
+    
+    # Log system info
+    logging.info("=== Trading Bot Started ===")
+    logging.info(f"Python version: {sys.version}")
+    logging.info(f"Operating System: {os.name}")
+    logging.info(f"Trading Mode: {TRADING_MODE}")
+    logging.info(f"Trading Pairs: {ALTCoin_LIST}")
+
+# =========================
+# Main Controller
+# =========================
+def main():
+    print("Starting main function...")  # Debug print
+    
+    # Load environment variables
+    load_dotenv()
+    print("Loaded environment variables")  # Debug print
+    
+    # Configure detailed logging
+    setup_detailed_logging()
+    print("Set up logging")  # Debug print
     
     # Trading pairs to monitor
     TRADING_PAIRS = [
@@ -958,47 +970,42 @@ def main():
         'SOL/USDT',
         'ADA/USDT'
     ]
+    print(f"Trading pairs: {TRADING_PAIRS}")  # Debug print
     
     # Get trading mode from environment
     TRADING_MODE = os.getenv('TRADING_MODE', 'backtest')
+    print(f"Trading mode: {TRADING_MODE}")  # Debug print
     
     try:
         if TRADING_MODE.lower() == "backtest":
+            print("Starting backtesting mode")  # Debug print
+            logging.info("Starting backtesting mode")
             # Initialize bot with trading pairs
             bot = TradingBot(TRADING_PAIRS, initial_balance=100)
+            print("Bot initialized")  # Debug print
             
-            # Run backtest
+            # Run backtest without days_back parameter
             bot.run_backtest()
+            print("Backtest completed")  # Debug print
             
         elif TRADING_MODE.lower() == "live":
-            # Verify API credentials are available
-            if not os.getenv('BINANCE_API_KEY') or not os.getenv('BINANCE_SECRET_KEY'):
-                raise ValueError("API credentials not found. Please set BINANCE_API_KEY and BINANCE_SECRET_KEY in .env file")
-            
-            # Initialize bot with trading pairs
+            print("Starting live trading mode")  # Debug print
+            logging.info("Starting live trading mode")
             bot = TradingBot(TRADING_PAIRS, initial_balance=float(os.getenv('INITIAL_BALANCE', '1000')))
-            
-            print("Starting live trading...")
-            print(f"Monitoring pairs: {', '.join(TRADING_PAIRS)}")
             
             while True:
                 try:
-                    # Run one iteration of the trading loop
                     bot.run_iteration()
-                    
-                    # Sleep for the specified interval
-                    time.sleep(int(os.getenv('UPDATE_INTERVAL', '900')))  # Default 15 minutes
-                    
+                    time.sleep(int(os.getenv('UPDATE_INTERVAL', '900')))
                 except Exception as e:
-                    logging.error(f"Error in trading loop: {str(e)}")
-                    time.sleep(60)  # Wait before retrying
+                    logging.error(f"Trading loop error: {str(e)}")
+                    time.sleep(60)
                     
-        else:
-            raise ValueError(f"Invalid TRADING_MODE: {TRADING_MODE}. Must be 'backtest' or 'live'")
-            
     except Exception as e:
-        logging.error(f"Fatal error: {str(e)}")
+        print(f"Error in main: {str(e)}")  # Debug print
+        logging.error(f"Fatal error: {str(e)}\n{traceback.format_exc()}")
         sys.exit(1)
 
 if __name__ == "__main__":
-    main() 
+    print("Script starting...")  # Debug print
+    main()
