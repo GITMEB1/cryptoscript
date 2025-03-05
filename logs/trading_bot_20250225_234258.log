@@ -1,0 +1,70 @@
+2025-02-25 23:42:58,293 - INFO - [crypto_trading_bot.py:1043] - === Trading Bot Started ===
+2025-02-25 23:42:58,294 - INFO - [crypto_trading_bot.py:1044] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-02-25 23:42:58,295 - INFO - [crypto_trading_bot.py:1045] - Operating System: nt
+2025-02-25 23:42:58,296 - INFO - [crypto_trading_bot.py:1046] - Trading Mode: live
+2025-02-25 23:42:58,297 - INFO - [crypto_trading_bot.py:1047] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-02-25 23:42:58,300 - INFO - [crypto_trading_bot.py:1087] - Starting live trading mode
+2025-02-25 23:42:58,350 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:43:07,024 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740526200001
+2025-02-25 23:43:07,092 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:43:08,692 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:44:08,696 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:44:09,342 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740526200001
+2025-02-25 23:44:09,369 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:44:10,512 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:45:10,517 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:45:11,742 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:45:11,764 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:45:12,722 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:46:12,729 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:46:13,451 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:46:13,474 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:46:14,542 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:47:14,546 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:47:15,299 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:47:15,322 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:47:16,377 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:48:16,380 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:48:17,232 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:48:17,244 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:48:18,301 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:49:18,303 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:49:19,105 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:49:19,115 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:49:20,431 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:50:20,434 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:50:21,560 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:50:21,570 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:50:22,419 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:51:22,437 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:51:23,558 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:51:23,649 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:51:25,922 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:52:25,930 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:52:26,817 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:52:26,843 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:52:27,632 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:53:27,640 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:53:28,392 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:53:28,403 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 23:53:29,745 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 23:54:29,751 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 23:54:30,631 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740527100001
+2025-02-25 23:54:30,655 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-26 00:13:01,414 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-26 00:14:01,420 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-26 00:14:02,759 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740528000001
+2025-02-26 00:14:02,803 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-26 00:14:03,716 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-26 00:15:03,720 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-26 00:15:04,401 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740528900001
+2025-02-26 00:15:04,410 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-26 00:15:05,248 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-26 00:16:05,250 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-26 00:16:06,058 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740528900001
+2025-02-26 00:16:06,084 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-26 00:16:06,847 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-26 00:17:06,848 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-26 00:17:07,506 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740528900001
+2025-02-26 00:17:07,533 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-26 00:17:08,411 - ERROR - [crypto_trading_bot.py:1095] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'

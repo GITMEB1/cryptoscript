@@ -1,0 +1,9 @@
+2025-02-26 11:40:58,632 - INFO - [crypto_trading_bot.py:1043] - === Trading Bot Started ===
+2025-02-26 11:40:58,664 - INFO - [crypto_trading_bot.py:1044] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-02-26 11:40:58,753 - INFO - [crypto_trading_bot.py:1045] - Operating System: nt
+2025-02-26 11:40:58,795 - INFO - [crypto_trading_bot.py:1046] - Trading Mode: live
+2025-02-26 11:40:58,799 - INFO - [crypto_trading_bot.py:1047] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-02-26 11:40:58,819 - INFO - [crypto_trading_bot.py:1087] - Starting live trading mode
+2025-02-26 11:40:58,937 - INFO - [crypto_trading_bot.py:112] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-26 11:41:10,895 - WARNING - [crypto_trading_bot.py:138] - No data returned for SOL/USDT at timestamp 1740569400001
+2025-02-26 11:41:10,956 - INFO - [crypto_trading_bot.py:173] - Successfully fetched 96 candles for SOL/USDT

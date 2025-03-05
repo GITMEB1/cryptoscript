@@ -1,0 +1,44 @@
+=== Trading Bot Monitor ===
+Mode: Remote
+Time: 2025-03-05 01:48:30
+==============================
+
+=== Bot Status ===
+Found PuTTY at: C:\Program Files\PuTTY
+Process count: 0
+Unexpected result from process check: 0
+Unexpected error checking bot status: 'charmap' codec can't encode character '\u2753' in position 12: character maps to <undefined>
+INFO: Could not find files for the given pattern(s).
+Traceback (most recent call last):
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\monitor_trading_bot.py", line 340, in check_bot_status
+    print("Bot Status: \u274c Not running on remote server")
+  File "C:\Users\abbey\.conda\envs\trading\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u274c' in position 12: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\monitor_trading_bot.py", line 344, in check_bot_status
+    print("Bot Status: \u2753 Unknown (error parsing result)")
+  File "C:\Users\abbey\.conda\envs\trading\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2753' in position 12: character maps to <undefined>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\monitor_trading_bot.py", line 423, in <module>
+    main() 
+    ^^^^^^
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\monitor_trading_bot.py", line 383, in main
+    bot_running = check_bot_status(args.remote)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\monitor_trading_bot.py", line 353, in check_bot_status
+    print("Bot Status: \u2753 Unknown (error checking status)")
+  File "C:\Users\abbey\.conda\envs\trading\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2753' in position 12: character maps to <undefined>

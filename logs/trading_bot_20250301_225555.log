@@ -1,0 +1,19 @@
+2025-03-01 22:55:55,748 - INFO - [crypto_trading_bot.py:1111] - === Trading Bot Started ===
+2025-03-01 22:55:55,750 - INFO - [crypto_trading_bot.py:1112] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-03-01 22:55:55,750 - INFO - [crypto_trading_bot.py:1113] - Operating System: nt
+2025-03-01 22:55:55,750 - INFO - [crypto_trading_bot.py:1114] - Trading Mode: live
+2025-03-01 22:55:55,751 - INFO - [crypto_trading_bot.py:1115] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-03-01 22:55:55,752 - INFO - [crypto_trading_bot.py:1155] - Starting live trading mode
+2025-03-01 22:55:55,789 - ERROR - [crypto_trading_bot.py:1170] - Fatal error: name 'current_time' is not defined
+Traceback (most recent call last):
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\crypto_trading_bot.py", line 1156, in main
+    bot = TradingBot(TRADING_PAIRS, initial_balance=float(os.getenv('INITIAL_BALANCE', '1000')))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\crypto_trading_bot.py", line 840, in __init__
+    self.signal_generator = SignalGenerator()
+                            ^^^^^^^^^^^^^^^^^
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\crypto_trading_bot.py", line 349, in __init__
+    self.last_signal_time = current_time
+                            ^^^^^^^^^^^^
+NameError: name 'current_time' is not defined
+

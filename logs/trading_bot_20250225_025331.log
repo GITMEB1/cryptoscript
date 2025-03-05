@@ -1,0 +1,10 @@
+2025-02-25 02:53:31,479 - INFO - [crypto_trading_bot.py:1019] - === Trading Bot Started ===
+2025-02-25 02:53:31,480 - INFO - [crypto_trading_bot.py:1020] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-02-25 02:53:31,482 - INFO - [crypto_trading_bot.py:1021] - Operating System: nt
+2025-02-25 02:53:31,484 - INFO - [crypto_trading_bot.py:1022] - Trading Mode: live
+2025-02-25 02:53:31,485 - INFO - [crypto_trading_bot.py:1023] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-02-25 02:53:31,487 - INFO - [crypto_trading_bot.py:1063] - Starting live trading mode
+2025-02-25 02:53:31,520 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 02:53:38,070 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740451500001
+2025-02-25 02:53:38,140 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 02:53:38,141 - ERROR - [crypto_trading_bot.py:959] - Error processing SOL/USDT: 'SignalGenerator' object has no attribute 'generate_signals'

@@ -1,0 +1,12 @@
+2025-02-21 01:58:29,902 - INFO - [crypto_trading_bot.py:946] - === Trading Bot Started ===
+2025-02-21 01:58:29,902 - INFO - [crypto_trading_bot.py:947] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-02-21 01:58:29,918 - INFO - [crypto_trading_bot.py:948] - Operating System: nt
+2025-02-21 01:58:29,918 - INFO - [crypto_trading_bot.py:949] - Trading Mode: backtest
+2025-02-21 01:58:29,923 - INFO - [crypto_trading_bot.py:950] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-02-21 01:58:29,925 - INFO - [crypto_trading_bot.py:982] - Starting backtesting mode
+2025-02-21 01:58:29,955 - ERROR - [crypto_trading_bot.py:1006] - Fatal error: TradingBot.run_backtest() got an unexpected keyword argument 'days_back'
+Traceback (most recent call last):
+  File "C:\Users\abbey\OneDrive\Documents\Danny\OneDrive\Desktop\CryptoScript\crypto_trading_bot.py", line 988, in main
+    bot.run_backtest(days_back=30)
+TypeError: TradingBot.run_backtest() got an unexpected keyword argument 'days_back'
+

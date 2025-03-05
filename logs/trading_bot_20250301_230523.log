@@ -1,0 +1,49 @@
+2025-03-01 23:05:23,821 - INFO - [crypto_trading_bot.py:1109] - === Trading Bot Started ===
+2025-03-01 23:05:23,824 - INFO - [crypto_trading_bot.py:1110] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-03-01 23:05:23,825 - INFO - [crypto_trading_bot.py:1111] - Operating System: nt
+2025-03-01 23:05:23,826 - INFO - [crypto_trading_bot.py:1112] - Trading Mode: live
+2025-03-01 23:05:23,827 - INFO - [crypto_trading_bot.py:1113] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-03-01 23:05:23,830 - INFO - [crypto_trading_bot.py:1153] - Starting live trading mode
+2025-03-01 23:05:23,864 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 23:05:33,105 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740870000001
+2025-03-01 23:05:33,176 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 23:20:33,996 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 23:20:37,232 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740870900001
+2025-03-01 23:20:37,572 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 23:35:38,613 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 23:35:41,382 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740871800001
+2025-03-01 23:35:42,227 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 23:50:42,961 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 23:50:44,670 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740872700001
+2025-03-01 23:50:44,715 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 00:05:45,397 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 00:05:47,150 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740873600001
+2025-03-02 00:05:47,190 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 00:20:47,812 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 00:20:49,676 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740874500001
+2025-03-02 00:20:49,688 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 00:35:50,423 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 00:35:52,347 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740875400001
+2025-03-02 00:35:52,550 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 00:50:53,544 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 00:50:55,551 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740876300001
+2025-03-02 00:50:55,722 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 01:05:56,571 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 01:05:58,613 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740877200001
+2025-03-02 01:05:58,698 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 01:20:59,739 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 01:21:01,672 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740878100001
+2025-03-02 01:21:01,895 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 01:36:02,725 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 01:36:04,845 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740879000001
+2025-03-02 01:36:04,908 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 01:51:05,917 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 01:51:07,844 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740879900001
+2025-03-02 01:51:08,122 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 02:06:09,006 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 02:06:11,098 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740880800001
+2025-03-02 02:06:11,297 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 02:21:12,102 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-02 02:21:13,950 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740881700001
+2025-03-02 02:21:14,100 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-02 02:21:14,898 - INFO - [crypto_trading_bot.py:437] - Buy signal generated: All conditions met

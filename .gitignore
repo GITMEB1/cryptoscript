@@ -36,10 +36,9 @@ env/
 .settings/
 
 # Logs and databases
-*.log
+
 *.sqlite
 *.db
-trading_bot.log
 
 # Testing
 .pytest_cache/

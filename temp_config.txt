@@ -1,0 +1,12 @@
+# Cryptocurrency Trading Bot Configuration
+
+# Trading Parameters
+INITIAL_BALANCE = 40
+UPDATE_INTERVAL = 900  # 15 minutes in seconds
+
+# Market Parameters
+BTC_DOMINANCE_THRESHOLD = 55.0  # Percent threshold for alt season detection
+ALTCoin_LIST = ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+
+# API Endpoints
+COINGECKO_API_URL = 'https://api.coingecko.com/api/v3'

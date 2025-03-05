@@ -1,0 +1,28 @@
+{
+    "trading":  {
+                    "timeframe":  "15m",
+                    "position_size":  0.1,
+                    "stop_loss":  0.02,
+                    "take_profit":  0.03,
+                    "initial_balance":  40,
+                    "pairs":  [
+                                  "SOL/USDT",
+                                  "ETH/USDT",
+                                  "BNB/USDT",
+                                  "ADA/USDT"
+                              ]
+                },
+    "exchange":  {
+                     "testnet":  false,
+                     "name":  "binance",
+                     "api_key":  "AyyS2LlzyflY18ENcaVQ5GNzHiE0D6BQOiLt973A0GoLQyDnr9FkPdoIEIUAC8cZ",
+                     "api_secret":  "y8JQtYYe80J7dLkvnM56ftNRGq32sS07OLNaIbiNAkzEE0ffYVwguuQXldNR33y1"
+                 },
+    "indicators":  {
+                       "rsi_oversold":  30,
+                       "rsi_period":  14,
+                       "ema_slow":  26,
+                       "ema_fast":  12,
+                       "rsi_overbought":  70
+                   }
+}

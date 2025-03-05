@@ -1,0 +1,14 @@
+2025-02-25 18:48:16,860 - INFO - [crypto_trading_bot.py:1042] - === Trading Bot Started ===
+2025-02-25 18:48:16,862 - INFO - [crypto_trading_bot.py:1043] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-02-25 18:48:16,863 - INFO - [crypto_trading_bot.py:1044] - Operating System: nt
+2025-02-25 18:48:16,863 - INFO - [crypto_trading_bot.py:1045] - Trading Mode: live
+2025-02-25 18:48:16,864 - INFO - [crypto_trading_bot.py:1046] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-02-25 18:48:16,865 - INFO - [crypto_trading_bot.py:1086] - Starting live trading mode
+2025-02-25 18:48:16,905 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 18:48:28,338 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740509100001
+2025-02-25 18:48:28,410 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 18:48:30,707 - ERROR - [crypto_trading_bot.py:1094] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'
+2025-02-25 18:49:30,709 - INFO - [crypto_trading_bot.py:120] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-25 18:49:31,468 - WARNING - [crypto_trading_bot.py:143] - No data returned for SOL/USDT at timestamp 1740509100001
+2025-02-25 18:49:31,477 - INFO - [crypto_trading_bot.py:177] - Successfully fetched 96 candles for SOL/USDT
+2025-02-25 18:49:32,862 - ERROR - [crypto_trading_bot.py:1094] - Trading loop error: invalid literal for int() with base 10: '900  # 15 minutes in seconds'

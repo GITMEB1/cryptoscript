@@ -1,150 +1,155 @@
-# Crypto Trading Bot Setup Instructions
+# Decimal Precision Fix - Setup & Deployment Instructions
 
-## Environment Setup
+This document provides detailed instructions for setting up and deploying the decimal precision fix for the CryptoScript trading bot.
 
-1. **Conda Environment**
+## Current Status
+
+✅ **Local Fix Applied**: The decimal precision fix has been successfully applied to the local copy of the trading bot.
+⚠️ **Remote Deployment Pending**: The fix needs to be deployed to the remote server.
+
+## Local Fix Summary
+
+The following changes have been applied locally:
+
+1. **Syntax Errors Fixed**:
+   - Fixed unterminated f-string at line 875
+   - Fixed invalid code insertion at line 611
+
+2. **normalize_decimal Function Replaced**:
+   - Implemented proper decimal rounding using `Decimal.quantize()` with `ROUND_HALF_UP`
+   - Added required imports (`ROUND_HALF_UP`)
+
+3. **Validation Completed**:
+   - Python compilation check passed
+   - Function tests with various decimal values confirmed correct rounding behavior
+
+## Remote Deployment Options
+
+### Option 1: Using PuTTY Tools (Recommended for Windows)
+
+#### Prerequisites
+
+1. **Install PuTTY**:
+   - Download from [https://www.putty.org/](https://www.putty.org/)
+   - Install and add the installation directory to your PATH environment variable
+
+2. **Verify Installation**:
+   ```powershell
+   Get-Command plink.exe
+   Get-Command pscp.exe
+   ```
+
+#### Deployment Steps
+
+1. **Run the Windows Deployment Script**:
+   ```powershell
+   .\deploy_windows.ps1
+   ```
+
+2. **What the Script Does**:
+   - Creates a backup of the original file on the server
+   - Uploads the fixed local file to the server
+   - Validates the changes on the server
+   - Provides rollback capability if needed
+
+### Option 2: Manual SCP/SSH Deployment
+
+If the automated scripts are not working, you can manually deploy the fix:
+
+1. **Create a Backup on the Server**:
    ```bash
-   conda create -n trading python=3.10
-   conda activate trading
+   ssh root@217.154.11.242 "cp /root/CryptoScript/crypto_trading_bot.py /root/CryptoScript/backup/crypto_trading_bot.$(date +%Y%m%d_%H%M%S).bak"
    ```
 
-2. **Required Packages**
+2. **Upload the Fixed File**:
    ```bash
-   conda install -c conda-forge ccxt pandas numpy requests python-dotenv
-   conda install -c conda-forge ta-lib
+   scp crypto_trading_bot.py root@217.154.11.242:/root/CryptoScript/
    ```
 
-3. **Environment Variables**
-   Create a `.env` file in the project root with:
-   ```
-   # Trading Mode: "backtest" or "live"
-   TRADING_MODE=backtest
-
-   # Binance API Credentials
-   BINANCE_API_KEY=your_api_key
-   BINANCE_API_SECRET=your_api_secret
-
-   # Trading Parameters
-   INITIAL_BALANCE=100
-   UPDATE_INTERVAL=900  # 15 minutes in seconds
-   ```
-
-## Important Notes for LLMs
-
-1. **Decimal Precision**
-   - All monetary calculations use Python's Decimal class for precision
-   - Convert all float inputs to Decimal using `Decimal(str(value))`
-   - Convert Decimal outputs to float for display using `float(value)`
-
-2. **Position Tracking**
-   - Positions are tracked using the Position class
-   - Each position maintains its own quantity, entry price, and stop levels
-   - All position calculations use Decimal arithmetic
-
-3. **Risk Management**
-   - Position sizing is ATR-based with a 2% risk per trade
-   - Maximum position size is 25% of balance
-   - Minimum trade amount is $12
-   - Daily loss limit is 5%
-
-4. **Trading Parameters**
-   - Timeframe: 15 minutes
-   - Maximum concurrent trades: 2
-   - Fee rate: 0.075% (with BNB discount)
-   - Slippage buffer: 0.3%
-
-## Running the Bot
-
-1. **Backtesting Mode**
+3. **Verify the Fix on the Server**:
    ```bash
-   conda activate trading
-   python crypto_trading_bot.py
+   ssh root@217.154.11.242 "cd /root/CryptoScript && python -m py_compile crypto_trading_bot.py"
    ```
 
-2. **Live Trading Mode**
-   - Set `TRADING_MODE=live` in `.env`
-   - Ensure valid API credentials
-   - Run the same command as backtesting
+4. **Test the Function on the Server**:
+   ```bash
+   ssh root@217.154.11.242 "cd /root/CryptoScript && python -c 'from crypto_trading_bot import normalize_decimal; print(normalize_decimal(\"0.123456785\"))'"
+   ```
 
-## Debugging Tips
+### Option 3: Using WinSCP (GUI Alternative)
 
-1. **Common Issues**
-   - If getting ccxt errors, check API credentials
-   - If getting calculation errors, check for float/Decimal conversion
-   - If no trades execute, check minimum position size requirements
+For those who prefer a graphical interface:
 
-2. **Logging**
-   - All trades are logged to console and trading_bot.log
-   - Check daily statistics in live mode
-   - Monitor position updates and trailing stops
+1. **Install WinSCP**:
+   - Download from [https://winscp.net/](https://winscp.net/)
+   - Install and run the application
 
-## Exchange-Specific Notes
+2. **Connect to the Server**:
+   - Host: 217.154.11.242
+   - Username: root
+   - Password: 4O9gNnSt
 
-1. **Binance Requirements**
-   - Minimum order size varies by trading pair
-   - BNB required for reduced fees
-   - API rate limits apply in live mode
+3. **Upload the File**:
+   - Navigate to /root/CryptoScript/ on the remote server
+   - Create a backup of crypto_trading_bot.py
+   - Upload the local crypto_trading_bot.py to replace the remote file
 
-## Project Structure
-```
-trading_bot/
-├── .env                  # Environment variables
-├── crypto_trading_bot.py # Main script
-├── setup_instructions.md # This file
-└── trading_bot.log      # Will be created when running
-```
+## Verification After Deployment
 
-## Environment Verification
+After deploying the fix to the remote server, verify that:
 
-Check if you're in the correct environment:
+1. **The file compiles without errors**:
+   ```bash
+   ssh root@217.154.11.242 "cd /root/CryptoScript && python -m py_compile crypto_trading_bot.py"
+   ```
+
+2. **The normalize_decimal function works correctly**:
+   ```bash
+   ssh root@217.154.11.242 "cd /root/CryptoScript && python -c 'from crypto_trading_bot import normalize_decimal; print(normalize_decimal(\"0.123456785\"))'"
+   ```
+   Expected output: `0.12345679`
+
+3. **The trading bot runs without errors**:
+   ```bash
+   ssh root@217.154.11.242 "cd /root/CryptoScript && source /root/miniconda3/etc/profile.d/conda.sh && conda activate trading && python crypto_trading_bot.py --test"
+   ```
+
+## Troubleshooting
+
+### Common Issues
+
+1. **SSH Authentication Failures**:
+   - Verify the correct password is being used
+   - Try connecting manually to identify any issues
+
+2. **File Permission Issues**:
+   - Ensure the uploaded file has the correct permissions:
+     ```bash
+     ssh root@217.154.11.242 "chmod 644 /root/CryptoScript/crypto_trading_bot.py"
+     ```
+
+3. **Import Errors**:
+   - If there are import errors, ensure the trading environment has all required packages:
+     ```bash
+     ssh root@217.154.11.242 "source /root/miniconda3/etc/profile.d/conda.sh && conda activate trading && pip install -r /root/CryptoScript/requirements.txt"
+     ```
+
+### Rollback Procedure
+
+If you need to restore the original file:
+
 ```bash
-# Check current environment
-conda info --envs
-
-# Check installed packages
-conda list | grep ta-lib
+ssh root@217.154.11.242 "cp /root/CryptoScript/backup/crypto_trading_bot.[TIMESTAMP].bak /root/CryptoScript/crypto_trading_bot.py"
 ```
 
-## Troubleshooting TA-Lib
+Replace `[TIMESTAMP]` with the actual timestamp of your backup file.
 
-If you encounter installation issues:
+## Security Considerations
 
-1. Make sure you're in the correct conda environment
-2. Try removing and reinstalling TA-Lib:
-```bash
-conda remove ta-lib
-conda install -c conda-forge ta-lib
-```
+- The current instructions contain hardcoded passwords for convenience
+- For production environments, consider more secure authentication methods
+- Remove or secure any files containing passwords after deployment
 
-3. Verify the installation:
-```bash
-python -c "import talib; print(talib.__version__)"
-```
+---
 
-If you still encounter issues:
-- Check if your Python version is compatible (3.10 recommended)
-- Ensure all system dependencies are installed
-- Try creating a new conda environment and starting fresh
-
-## Common Issues
-
-1. **"No module named 'talib'"**
-   - Verify you're in the correct conda environment
-   - Reinstall TA-Lib using conda
-
-2. **TA-Lib installation fails**
-   - Install system dependencies first
-   - Use conda instead of pip for TA-Lib
-   - Check system architecture compatibility
-
-3. **Import errors after installation**
-   - Restart your Python session
-   - Verify PATH environment variables
-   - Check for conflicting installations
-
-## Additional Notes
-
-- The bot is configured for a $70 initial balance
-- Backtesting mode is enabled by default
-- Minimum trade amount is set to $10 (Binance requirement)
-- Trading fees are set to 0.1% per trade 
+*Last Updated: March 5, 2025* 

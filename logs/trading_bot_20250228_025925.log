@@ -1,0 +1,947 @@
+2025-02-28 02:59:25,395 - INFO - [crypto_trading_bot.py:1035] - === Trading Bot Started ===
+2025-02-28 02:59:25,399 - INFO - [crypto_trading_bot.py:1036] - Python version: 3.11.11 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:34:19) [MSC v.1929 64 bit (AMD64)]
+2025-02-28 02:59:25,400 - INFO - [crypto_trading_bot.py:1037] - Operating System: nt
+2025-02-28 02:59:25,401 - INFO - [crypto_trading_bot.py:1038] - Trading Mode: live
+2025-02-28 02:59:25,402 - INFO - [crypto_trading_bot.py:1039] - Trading Pairs: ['ETH/USDT', 'BNB/USDT', 'SOL/USDT', 'ADA/USDT']
+2025-02-28 02:59:25,407 - INFO - [crypto_trading_bot.py:1079] - Starting live trading mode
+2025-02-28 02:59:25,510 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 02:59:34,120 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740710700001
+2025-02-28 02:59:34,238 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 02:59:34,474 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 02:59:34,794 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 03:14:36,270 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 03:14:38,415 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740711600001
+2025-02-28 03:14:38,881 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 03:14:39,010 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 03:14:39,176 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 03:29:39,727 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 03:29:41,423 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740712500001
+2025-02-28 03:29:41,435 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 03:29:41,496 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 03:29:41,672 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 03:44:42,139 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 03:44:44,225 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740713400001
+2025-02-28 03:44:44,236 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 03:44:44,278 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 03:59:44,957 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 03:59:46,644 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740714300001
+2025-02-28 03:59:46,653 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 03:59:46,688 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 04:14:47,300 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 04:14:48,973 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740715200001
+2025-02-28 04:14:48,983 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 04:14:49,008 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 04:29:49,627 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 04:29:51,334 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740716100001
+2025-02-28 04:29:51,349 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 04:29:51,367 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 04:44:52,001 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 04:44:53,643 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740717000001
+2025-02-28 04:44:53,652 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 04:59:54,310 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 04:59:55,996 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740717900001
+2025-02-28 04:59:56,007 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 05:14:56,647 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 05:14:58,393 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740718800001
+2025-02-28 05:14:58,456 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 05:29:59,123 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 05:30:01,021 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740719700001
+2025-02-28 05:30:01,033 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 05:45:01,809 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 05:45:03,489 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740721500001
+2025-02-28 05:45:03,498 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 06:00:04,139 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 06:00:05,857 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740722400001
+2025-02-28 06:00:05,896 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 06:15:06,575 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 06:15:08,274 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740723300001
+2025-02-28 06:15:08,283 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 06:30:08,916 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 06:30:10,608 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740724200001
+2025-02-28 06:30:10,620 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 06:45:11,248 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 06:45:12,927 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740725100001
+2025-02-28 06:45:12,936 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 07:00:13,603 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 07:00:15,279 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740726000001
+2025-02-28 07:00:15,296 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 07:15:15,936 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 07:15:17,605 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740726900001
+2025-02-28 07:15:17,617 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 07:30:18,244 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 07:30:19,941 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740727800001
+2025-02-28 07:30:19,949 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 07:45:22,101 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 07:45:23,829 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740728700001
+2025-02-28 07:45:23,839 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 08:00:24,482 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 08:00:26,189 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740729600001
+2025-02-28 08:00:26,206 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 08:15:26,892 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 08:15:29,033 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740730500001
+2025-02-28 08:15:29,047 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 08:30:29,688 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 08:30:31,370 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740731400001
+2025-02-28 08:30:31,378 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 08:45:32,017 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 08:45:33,704 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740732300001
+2025-02-28 08:45:33,717 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 09:00:34,344 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 09:00:36,504 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740733200001
+2025-02-28 09:00:36,517 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 09:15:37,183 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 09:15:39,279 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740734100001
+2025-02-28 09:15:39,287 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 09:30:40,025 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 09:30:41,947 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740735000001
+2025-02-28 09:30:42,254 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 09:30:43,003 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 09:45:43,063 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 09:45:44,826 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740735900001
+2025-02-28 09:45:44,868 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 09:45:45,516 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 09:45:45,521 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:00:45,548 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 10:00:47,289 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740736800001
+2025-02-28 10:00:47,332 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 10:00:47,957 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:00:47,963 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:15:47,993 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 10:15:49,740 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740737700001
+2025-02-28 10:15:49,775 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 10:15:50,391 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:15:50,397 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:30:50,432 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 10:30:52,602 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740738600001
+2025-02-28 10:30:52,613 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 10:30:53,191 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:30:53,196 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:45:53,421 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 10:45:55,352 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740739500001
+2025-02-28 10:45:55,559 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 10:45:56,271 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 10:45:56,278 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 11:00:56,349 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 11:00:58,056 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740740400001
+2025-02-28 11:00:58,074 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 11:00:58,647 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 11:00:58,652 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 12:50:22,101 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 12:50:22,922 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740660622154
+2025-02-28 12:50:22,926 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 13:05:23,119 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 13:05:25,242 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740747600001
+2025-02-28 13:05:25,429 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 13:05:26,197 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 13:05:26,202 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 13:20:26,523 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 13:20:28,436 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740748500001
+2025-02-28 13:20:28,674 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 13:20:29,287 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 13:20:29,292 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 13:35:29,602 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 13:35:31,365 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740749400001
+2025-02-28 13:35:31,627 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 13:35:32,376 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 13:35:32,384 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 13:50:32,653 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 13:50:43,311 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740664232678
+2025-02-28 13:50:43,317 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 14:05:43,470 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 14:05:44,112 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740665143487
+2025-02-28 14:05:44,117 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 14:20:44,144 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 14:20:44,659 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740666044147
+2025-02-28 14:20:44,662 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 14:35:44,669 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 14:35:45,190 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740666944672
+2025-02-28 14:35:45,191 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 14:50:45,210 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 14:50:45,723 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740667845211
+2025-02-28 14:50:45,724 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 15:05:45,745 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 15:05:46,261 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740668745746
+2025-02-28 15:05:46,262 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 15:20:46,267 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 15:20:46,783 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740669646269
+2025-02-28 15:20:46,786 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 15:35:46,792 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 15:35:47,309 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740670546793
+2025-02-28 15:35:47,310 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 15:50:47,321 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 15:50:47,828 - ERROR - [crypto_trading_bot.py:183] - Error fetching batch for SOL/USDT: binance GET https://api.binance.com/api/v3/klines?interval=15m&limit=500&symbol=SOLUSDT&startTime=1740671447321
+2025-02-28 15:50:47,829 - ERROR - [crypto_trading_bot.py:187] - No data collected for SOL/USDT
+2025-02-28 16:05:47,876 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 16:05:50,342 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740758400001
+2025-02-28 16:05:51,001 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 16:05:52,128 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:05:52,158 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:05:52,502 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:05:52,517 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:05:52,536 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:05:52,548 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:05:52,619 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:52,851 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 16:20:54,948 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740759300001
+2025-02-28 16:20:55,231 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 16:20:55,826 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:55,832 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:56,036 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:56,043 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:56,050 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:56,057 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:20:56,109 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:56,269 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 16:35:58,449 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740760200001
+2025-02-28 16:35:58,749 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 16:35:59,317 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:59,327 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:59,522 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:59,527 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:59,534 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:59,542 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:35:59,573 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:50:59,818 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 16:51:02,969 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740761100001
+2025-02-28 16:51:03,233 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 16:51:03,941 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:51:03,951 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:51:04,143 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:51:04,152 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:51:04,160 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:51:04,166 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 16:51:04,191 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:04,425 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 17:06:06,706 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740762000001
+2025-02-28 17:06:06,947 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 17:06:07,475 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:07,481 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:07,661 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:07,667 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:07,675 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:07,681 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:06:07,711 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:07,909 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 17:21:09,930 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740762900001
+2025-02-28 17:21:10,128 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 17:21:10,674 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:10,683 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:10,869 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:10,876 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:10,882 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:10,891 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:21:10,921 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:11,106 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 17:36:13,958 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740763800001
+2025-02-28 17:36:14,189 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 17:36:14,713 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:14,719 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:14,912 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:14,920 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:14,927 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:14,934 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:36:14,969 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:15,242 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 17:51:17,295 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740764700001
+2025-02-28 17:51:17,553 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 17:51:18,067 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:18,075 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:18,265 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:18,273 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:18,280 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:18,287 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 17:51:18,316 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:18,575 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 18:06:20,906 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740765600001
+2025-02-28 18:06:21,121 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 18:06:21,658 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:21,664 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:21,864 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:21,871 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:21,877 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:21,887 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:06:21,914 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:22,161 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 18:21:24,503 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740766500001
+2025-02-28 18:21:24,657 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 18:21:25,480 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:25,493 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:25,835 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:25,850 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:25,864 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:25,881 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:21:25,943 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:26,241 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 18:36:34,772 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740767400001
+2025-02-28 18:36:35,003 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 18:36:35,389 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:35,395 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:35,538 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:35,544 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:35,551 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:35,557 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:36:35,581 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:35,688 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 18:51:37,773 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740768300001
+2025-02-28 18:51:37,782 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 18:51:38,151 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:38,157 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:38,301 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:38,306 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:38,313 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:38,317 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 18:51:38,340 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:38,458 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 19:06:40,597 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740769200001
+2025-02-28 19:06:40,608 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 19:06:40,908 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:40,915 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:41,052 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:41,057 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:41,063 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:41,069 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:06:41,093 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:41,208 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 19:21:43,234 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740770100001
+2025-02-28 19:21:43,245 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 19:21:43,550 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:43,556 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:43,708 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:43,715 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:43,721 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:43,727 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:21:43,750 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:43,880 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 19:36:45,898 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740771000001
+2025-02-28 19:36:45,909 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 19:36:46,191 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:46,196 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:46,335 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:46,341 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:46,347 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:46,352 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:36:46,373 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:46,503 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 19:51:49,065 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740771900001
+2025-02-28 19:51:49,073 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 19:51:49,344 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:49,349 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:49,487 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:49,493 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:49,499 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:49,505 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 19:51:49,527 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:49,666 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 20:06:51,545 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740772800001
+2025-02-28 20:06:51,554 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 20:06:51,830 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:51,836 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:51,971 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:51,977 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:51,983 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:51,988 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:06:52,010 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:52,158 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 20:21:54,136 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740773700001
+2025-02-28 20:21:54,144 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 20:21:54,411 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:54,417 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:54,553 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:54,558 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:54,563 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:54,569 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:21:54,591 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:54,746 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 20:36:56,555 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740774600001
+2025-02-28 20:36:56,563 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 20:36:56,810 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:56,816 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:56,954 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:56,959 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:56,965 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:56,971 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:36:56,994 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:51:57,152 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 20:51:59,704 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740775500001
+2025-02-28 20:51:59,713 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 20:51:59,952 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:51:59,958 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:52:00,103 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:52:00,109 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:52:00,115 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:52:00,121 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 20:52:00,143 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:00,328 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 21:07:03,148 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740776400001
+2025-02-28 21:07:03,158 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 21:07:03,387 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:03,392 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:03,526 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:03,532 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:03,537 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:03,543 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:07:03,566 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:03,742 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 21:22:05,793 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740777300001
+2025-02-28 21:22:05,801 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 21:22:06,020 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:06,026 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:06,162 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:06,167 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:06,173 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:06,178 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:22:06,202 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:06,387 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 21:37:08,453 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740778200001
+2025-02-28 21:37:08,462 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 21:37:08,678 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:08,685 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:08,821 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:08,827 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:08,832 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:08,838 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:37:08,860 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:09,053 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 21:52:12,666 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740779100001
+2025-02-28 21:52:12,674 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 21:52:12,883 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:12,888 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:13,022 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:13,029 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:13,034 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:13,040 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 21:52:13,062 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:13,261 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 22:07:15,774 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740780000001
+2025-02-28 22:07:15,782 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 22:07:15,983 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:15,989 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:16,127 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:16,132 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:16,139 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:16,145 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:16,170 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:07:16,373 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:16,385 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 22:22:20,109 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740780900001
+2025-02-28 22:22:20,117 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 22:22:20,312 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,317 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,451 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,456 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,462 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,468 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,490 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:22:20,684 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:20,705 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 22:37:24,719 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740781800001
+2025-02-28 22:37:24,729 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 22:37:24,962 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:24,968 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:25,139 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:25,144 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:25,150 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:25,155 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:25,181 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:37:25,379 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:25,407 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 22:52:27,386 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740782700001
+2025-02-28 22:52:27,395 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 22:52:27,571 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,577 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,714 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,721 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,726 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,731 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,753 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 22:52:27,949 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:27,986 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 23:07:30,064 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740783600001
+2025-02-28 23:07:30,073 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 23:07:30,239 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,245 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,394 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,400 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,405 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,411 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,433 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:07:30,630 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:30,675 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 23:22:32,459 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740784500001
+2025-02-28 23:22:32,467 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 23:22:32,644 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:32,650 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:32,792 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:32,798 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:32,804 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:32,809 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:32,831 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:22:33,027 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:33,079 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 23:37:35,616 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740785400001
+2025-02-28 23:37:35,624 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 23:37:35,779 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:35,784 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:35,920 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:35,925 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:35,931 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:35,936 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:35,958 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:37:36,152 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:36,214 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-02-28 23:52:37,961 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740786300001
+2025-02-28 23:52:37,969 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-02-28 23:52:38,134 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:38,275 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:38,281 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:38,287 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:38,292 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:38,314 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-02-28 23:52:38,510 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:07:38,580 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 00:07:41,702 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740787200001
+2025-03-01 00:07:41,713 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 00:07:41,993 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:07:41,999 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:07:42,005 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:07:42,010 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:07:42,032 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:07:42,226 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:22:42,304 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 00:22:44,147 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740788100001
+2025-03-01 00:22:44,155 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 00:22:44,432 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:22:44,437 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:22:44,442 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:22:44,448 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:22:44,470 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:22:44,670 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:44,757 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 00:37:46,800 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740789000001
+2025-03-01 00:37:46,810 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 00:37:47,077 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:47,083 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:47,088 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:47,094 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:47,116 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:47,309 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:37:47,387 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:47,400 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 00:52:49,068 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740789900001
+2025-03-01 00:52:49,077 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 00:52:49,336 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:49,341 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:49,347 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:49,356 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:49,378 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:49,568 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 00:52:49,646 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:49,667 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 01:07:51,648 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740790800001
+2025-03-01 01:07:51,656 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 01:07:51,907 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:51,913 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:51,918 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:51,924 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:51,946 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:52,158 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:07:52,237 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:52,268 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 01:22:54,793 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740791700001
+2025-03-01 01:22:54,801 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 01:22:55,062 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:55,067 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:55,073 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:55,079 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:55,101 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:55,294 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:22:55,372 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:55,410 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 01:37:57,222 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740792600001
+2025-03-01 01:37:57,231 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 01:37:57,466 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:57,471 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:57,477 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:57,482 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:57,504 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:57,699 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:37:57,777 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:52:57,821 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 01:52:59,517 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740793500001
+2025-03-01 01:52:59,525 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 01:52:59,769 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:52:59,775 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:52:59,781 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:52:59,786 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:52:59,808 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:53:00,001 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:53:00,085 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:53:00,124 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:53:00,130 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 01:53:00,154 - ERROR - [crypto_trading_bot.py:975] - Error processing SOL/USDT: 'RiskManager' object has no attribute 'compute_position_size'
+2025-03-01 02:08:00,157 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 02:08:01,841 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740794400001
+2025-03-01 02:08:01,850 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 02:08:02,067 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,073 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,079 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,084 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,105 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,300 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,377 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,416 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:08:02,421 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:02,434 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 02:23:04,750 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740795300001
+2025-03-01 02:23:04,759 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 02:23:04,967 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:04,973 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:04,978 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:04,984 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,006 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,203 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,291 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,332 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,338 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,344 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,349 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:23:05,350 - ERROR - [crypto_trading_bot.py:975] - Error processing SOL/USDT: 'RiskManager' object has no attribute 'compute_position_size'
+2025-03-01 02:38:05,353 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 02:38:07,040 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740796200001
+2025-03-01 02:38:07,049 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 02:38:07,109 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,114 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,212 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,235 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,248 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,254 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,259 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,264 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,287 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,477 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,554 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,593 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,598 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,603 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:38:07,609 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:07,622 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 02:53:09,292 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740797100001
+2025-03-01 02:53:09,301 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 02:53:09,358 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,363 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,470 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,492 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,506 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,512 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,517 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,523 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,545 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,739 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,818 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,856 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,862 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,868 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,873 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 02:53:09,880 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:09,891 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 03:08:11,597 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740798000001
+2025-03-01 03:08:11,605 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 03:08:11,650 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,655 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,756 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,778 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,792 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,798 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,803 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,809 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:11,832 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,042 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,120 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,159 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,164 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,170 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,176 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:08:12,181 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:12,202 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 03:23:13,878 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740798900001
+2025-03-01 03:23:13,886 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 03:23:13,922 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:13,928 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,030 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,051 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,066 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,072 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,076 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,082 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,104 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,298 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,376 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,415 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,420 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,426 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,432 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:23:14,438 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:14,467 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 03:38:16,145 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740799800001
+2025-03-01 03:38:16,154 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 03:38:16,182 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,188 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,288 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,310 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,324 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,329 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,335 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,341 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,363 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,558 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,638 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,680 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,686 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,692 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,698 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:38:16,704 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:16,747 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 03:53:18,799 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740800700001
+2025-03-01 03:53:18,807 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 03:53:18,828 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,834 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,933 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,955 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,968 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,974 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,979 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:18,985 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,007 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,200 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,278 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,317 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,321 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,327 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,333 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 03:53:19,339 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:19,384 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 04:08:21,020 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740801600001
+2025-03-01 04:08:21,029 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 04:08:21,042 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,047 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,147 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,167 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,180 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,187 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,192 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,198 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,220 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,415 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,492 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,531 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,537 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,542 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,548 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:08:21,554 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:21,610 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 04:23:23,322 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740802500001
+2025-03-01 04:23:23,330 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 04:23:23,343 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,443 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,463 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,477 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,483 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,489 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,495 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,519 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,720 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,797 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,836 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,841 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,848 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,852 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:23:23,858 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:23,920 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 04:38:26,033 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740803400001
+2025-03-01 04:38:26,041 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 04:38:26,148 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,169 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,182 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,188 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,193 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,199 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,221 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,416 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,494 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,534 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,540 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,545 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,551 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:38:26,557 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:26,627 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 04:53:28,292 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740804300001
+2025-03-01 04:53:28,301 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 04:53:28,400 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,423 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,438 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,444 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,450 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,456 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,480 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,686 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,764 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,803 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,808 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,814 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,820 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 04:53:28,825 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:28,907 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 05:08:31,584 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740805200001
+2025-03-01 05:08:31,592 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 05:08:31,683 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,705 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,719 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,725 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,730 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,736 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,760 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:31,957 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:32,033 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:32,078 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:32,083 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:32,090 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:32,094 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:08:32,100 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:32,187 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 05:23:33,878 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740806100001
+2025-03-01 05:23:33,885 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 05:23:33,969 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:33,991 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,004 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,010 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,015 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,021 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,046 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,249 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,326 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,373 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,378 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,384 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,389 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:23:34,395 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:34,486 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 05:38:36,255 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740807000001
+2025-03-01 05:38:36,263 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 05:38:36,340 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,360 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,374 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,380 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,386 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,392 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,414 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,610 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,687 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,728 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,734 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,740 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,745 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:38:36,751 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:36,851 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 05:53:38,518 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740807900001
+2025-03-01 05:53:38,526 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 05:53:38,594 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,617 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,630 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,636 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,642 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,649 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,674 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,873 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,952 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,993 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:38,998 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:39,004 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:39,010 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 05:53:39,015 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:39,122 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 06:08:40,797 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740808800001
+2025-03-01 06:08:40,805 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 06:08:40,889 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:40,903 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:40,909 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:40,916 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:40,921 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:40,944 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,138 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,218 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,258 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,264 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,270 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,275 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:08:41,281 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:41,411 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 06:23:43,091 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740809700001
+2025-03-01 06:23:43,099 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 06:23:43,174 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,189 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,194 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,201 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,209 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,231 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,427 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,507 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,545 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,551 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,556 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,563 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:23:43,568 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:43,696 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 06:38:47,910 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740810600001
+2025-03-01 06:38:47,918 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 06:38:47,993 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,008 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,015 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,022 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,028 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,053 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,262 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,340 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,381 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,385 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,391 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,397 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 06:38:48,403 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 13:05:40,202 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 13:05:42,317 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740834000001
+2025-03-01 13:05:42,659 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 13:20:43,631 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 13:20:47,192 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740834900001
+2025-03-01 13:20:48,313 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 13:35:51,406 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 13:35:56,577 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740835800001
+2025-03-01 13:35:56,792 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 13:50:57,513 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 13:51:03,640 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740836700001
+2025-03-01 13:51:03,651 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 14:06:04,380 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 14:06:06,506 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740837600001
+2025-03-01 14:06:06,520 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 14:21:07,265 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 14:21:09,282 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740838500001
+2025-03-01 14:21:09,515 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 14:36:10,268 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 14:36:12,229 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740839400001
+2025-03-01 14:36:12,271 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 14:36:12,492 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:36:12,497 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:36:12,504 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:36:12,511 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:51:13,095 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 14:51:15,345 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740840300001
+2025-03-01 14:51:15,497 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 14:51:15,771 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:51:15,776 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:51:15,782 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 14:51:15,788 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 15:06:16,348 - INFO - [crypto_trading_bot.py:144] - Fetching 1 days of 15m data for SOL/USDT
+2025-03-01 15:06:20,407 - WARNING - [crypto_trading_bot.py:170] - No data returned for SOL/USDT at timestamp 1740841200001
+2025-03-01 15:06:20,894 - INFO - [crypto_trading_bot.py:205] - Successfully fetched 96 candles for SOL/USDT
+2025-03-01 15:06:21,434 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 15:06:21,448 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 15:06:21,462 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
+2025-03-01 15:06:21,473 - INFO - [crypto_trading_bot.py:428] - Buy signal generated: All conditions met
